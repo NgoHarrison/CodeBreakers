@@ -30,5 +30,7 @@ def searchMatrix(matrix,target):
             return True
         elif matrix[mid][0] < target and matrix[mid][len(matrix[mid])-1] < target:
             lo = mid + 1
-
-#print(searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,50]],7))
+arr = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]
+#print(searchMatrix(arr,5))
+temp = [y[2] for x in range(len(arr)) for y in arr[x]]
+print(temp)
